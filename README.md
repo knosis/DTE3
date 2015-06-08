@@ -4,12 +4,9 @@ Repo for group challenges
 ##Person 1 solution explained##
 ##person 2 solution explained##
 ##Person 3 solution explained##
-My solution for the array uses the method sort_by. sort_by is not implenented by arrays by default however sort_by! is. sort_by is an Enumerable and it always takes a block of code and executes it on every object in the array. there are 3 ways you can define the block if the recieving object (the array) does not implement a sort_by method. the first is 
-```ruby
-  sort_by do |a, b|
-    #somecode to determine sort order...
-  end```
-              
+My solution for the array uses the method sort_by. sort_by is not implenented by arrays by default however sort_by! is. sort_by is an Enumerable and it always takes a block of code and executes it on every object in the array. there are 3 ways you can define the block if the recieving object (the array) does not implement a sort_by method. the first is  
+```ruby  sort_by do |a, b|  #somecode to determine sort order...  end```
+
 the block you pass to the reciever determines the sort order.
 
 The second is ``sort_by { |a, b| some comparision code i.e(a <=> b)...} `` where you give the proper way to compare two objects against each other. 
