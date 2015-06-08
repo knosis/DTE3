@@ -6,11 +6,11 @@ Repo for group challenges
 ##Person 3 solution explained##
 My solution for the array uses the method sort_by. sort_by is not implenented by arrays by default however sort_by! is. sort_by is an Enumerable and it always takes a block of code and executes it on every object in the array. there are 3 ways you can define the block if the recieving object (the array) does not implement a sort_by method. the first is  
 
-``sort_by do |a, b|
+```sort_by do |a, b|
 
   #somecode to determine sort order...
   
-end``
+end```
 
 the block you pass to the reciever determines the sort order.
 
