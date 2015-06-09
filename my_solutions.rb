@@ -22,17 +22,23 @@ end
 #
 
 # Person 2
-def my_array_modification_method!(source, thing_to_modify)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+def my_array_modification_method!(my_array, num)
+    my_array.map! { |x| x.is_a?(Integer) ? x + num : x }
 end
 
-def my_hash_modification_method!(source, thing_to_modify)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
-end
+# Defined the method so that two arguments are required—an array (my_array) and integer (num)
+# Methods used:
+#map!: invokes the block (x.is_a?(Integer) ? x + num : x) for each element x in the #array and replaces each element with the value returned by the block
+#'is_a?(Integer): checks the class of each object/element within an array. In this #case, it's being used to check if an element is an Integer. If the class is an #integer, the block returns x + num to replace the element; if not, it just replaces #the element with itself.
 
-# Identify and describe the Ruby method(s) you implemented.
-#
-#
+def my_hash_modification_method!(my_hash, num)
+    my_hash.each { |key, value| my_hash[key] = value + num}
+  end
+
+# Defined the method so that two arguments are required—an array (my_array) and integer #(num)
+# Methods used:
+#  map!: invokes the block (x.is_a?(Integer) ? x + num : x) for each element x in the #array and replaces each element with the value returned by the block
+# 'is_a?(Integer): checks the class of each object/element within an array. In this #case, it's being used to check if an element is an Integer. If the class is an #integer, the block returns x + num to replace the element; if not, it just replaces #the element with itself.
 #
 
 
