@@ -27,18 +27,21 @@ def my_array_modification_method!(my_array, num)
 end
 
 # Defined the method so that two arguments are required—an array (my_array) and integer (num)
-# Methods used:
-#map!: invokes the block (x.is_a?(Integer) ? x + num : x) for each element x in the #array and replaces each element with the value returned by the block
-#'is_a?(Integer): checks the class of each object/element within an array. In this #case, it's being used to check if an element is an Integer. If the class is an #integer, the block returns x + num to replace the element; if not, it just replaces #the element with itself.
+#
+# Identify and describe the Ruby method(s) you implemented.
+#
+# map!: invokes the block (x.is_a?(Integer) ? x + num : x) for each element x in the #array and replaces each element with the value returned by the block
+# is_a?(Integer): checks the class of each object/element within an array. In this case, it's being used to check if an element is an Integer. If the class is an integer, the block returns x + num to replace the element; if not, it just replaces #the element with itself.
 
 def my_hash_modification_method!(my_hash, num)
     my_hash.each { |key, value| my_hash[key] = value + num}
   end
 
 # Defined the method so that two arguments are required—an array (my_array) and integer #(num)
-# Methods used:
+# Identify and describe the Ruby method(s) you implemented.
+#
 #  map!: invokes the block (x.is_a?(Integer) ? x + num : x) for each element x in the #array and replaces each element with the value returned by the block
-# 'is_a?(Integer): checks the class of each object/element within an array. In this #case, it's being used to check if an element is an Integer. If the class is an #integer, the block returns x + num to replace the element; if not, it just replaces #the element with itself.
+# 'is_a?(Integer): checks the class of each object/element within an array. In this case, it's being used to check if an element is an Integer. If the class is an #integer, the block returns x + num to replace the element; if not, it just replaces #the element with itself.
 #
 
 
