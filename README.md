@@ -24,4 +24,12 @@ In my solution I used the third implementation method and told it to first turn 
 My second solution also uses ``sort_by`` which is avaliable to both arrays and hashes through enumeration. The difference between them here is that when called on a hash, ``sort_by`` returns a hash. I first call ``sort_by`` on the keys, and then I called ``sort_by`` on the returned hash's values. I tired it the opposite way first but that had the effect of first ordering the objects by key and then by value.
 
 ##Person 4 solution explained##
+
+I used the methods: count, delete, class and include?
+- count: counts occurances of the element it is passed (a letter in this case)
+- delete: deletes the element it is passed (if passed "car" then "car" is deleted) from the array.
+- include?: checks to see if an item is included in an array.
+- class: returns the class of an object.
+
+
 ##Person 5 solution explained##
