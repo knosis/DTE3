@@ -22,13 +22,13 @@ def my_array_finding_method(array, letter)
 end
 
 def my_hash_finding_method(hash, number)
-  new_hash = []
+  new_array = []
   hash.each do |key, value|
     if value == number
-      new_hash << key
+      new_array << key
     end
   end
-  new_hash
+  new_array
 end
 
 # Identify and describe the Ruby method(s) you implemented.
