@@ -2,6 +2,9 @@
 Repo for group challenges
 
 ##Person 1 solution explained##
+My first function loops through the array and turns each element into a string with .to_s and 
+then into an array of letters using .split(""). It then loops through each letter and if the letter is equal to the letter parameter, it is pushed into the new_array.
+The second function loops through the hash and checks if the value is equal to the number parameter. If it is, the value's key is pushed into the new_array.
 ##person 2 solution explained##
 map!: invokes the block ``(x.is_a?(Integer) ? x + num : x)`` for each element x in the array and replaces each element with the value returned by the block
 ``is_a?(Integer)``: checks the class of each object/element within an array. In this case, it's being used to check if an element is an Integer. If the class is an integer, the block returns ``x + num`` to replace the element; if not, it just replaces the element with itself.
