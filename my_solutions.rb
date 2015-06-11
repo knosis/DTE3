@@ -66,17 +66,44 @@ def my_hash_modification_method!(my_hash, num)
 
 # Person 4
 def my_array_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  array_for_deletion = [] # array of the elements of the source string we will delete 
+  source.each do |element|
+    element = element.to_s # converting element to string and saving it 
+    puts element.class # confirming the class change happened  
+    if element.count(thing_to_delete.to_s) >=1   # counts incidences of thing to delete 
+        array_for_deletion.push(element)
+    else
+    end 
+  end  
+  array_for_deletion.each do |todelete|
+    source.delete(todelete) # deleting elements that contain the letter passed in as "thing_to_delete"
+  end
+return source
 end
+
+# Example:
+# my_array_deletion_method!(i_want_pets, "a") #works
 
 def my_hash_deletion_method!(source, thing_to_delete)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.each do |k, element| 
+    k = k.to_s # converting element to string and saving it
+    if k.include?(thing_to_delete.to_s) 
+      source.delete(k) # delete method
+    else
+    end 
+  end
+  return source
 end
 
+# Example: 
+# my_hash_deletion_method!(my_family_pets_ages, "George") #works
+
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+# I used the methods: count, delete, class and include?
+# count: counts occurances of the element it is passed (a letter in this case)
+# delete: deletes the element it is passed (if passed "car" then "car" is deleted) from the array.
+# include?: checks to see if an item is included in an array.
+# class: returns the class of an object.
 
 
 # Person 5
