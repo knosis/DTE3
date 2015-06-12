@@ -8,17 +8,32 @@ i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
 # Person 1's solution
-def my_array_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+def my_array_finding_method(array, letter)
+  new_array = []
+  array.each do |x|
+    x.to_s.split("").each do |y|
+      if y == letter
+        new_array << x
+        break
+      end
+    end
+  end
+  new_array
 end
 
-def my_hash_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+def my_hash_finding_method(hash, number)
+  new_array = []
+  hash.each do |key, value|
+    if value == number
+      new_array << key
+    end
+  end
+  new_array
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
+#.split("") converts a string to an array
+#.to_s converts object to a string
 #
 
 # Person 2
