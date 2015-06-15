@@ -83,11 +83,9 @@ def my_hash_modification_method!(my_hash, num)
 def my_array_deletion_method!(source, thing_to_delete)
   array_for_deletion = [] # array of the elements of the source string we will delete 
   source.each do |element|
-    element = element.to_s # converting element to string and saving it 
-    puts element.class # confirming the class change happened  
+    element = element.to_s # converting element to string and saving it  
     if element.count(thing_to_delete.to_s) >=1   # counts incidences of thing to delete 
         array_for_deletion.push(element)
-    else
     end 
   end  
   array_for_deletion.each do |todelete|
@@ -104,7 +102,6 @@ def my_hash_deletion_method!(source, thing_to_delete)
     k = k.to_s # converting element to string and saving it
     if k.include?(thing_to_delete.to_s) 
       source.delete(k) # delete method
-    else
     end 
   end
   return source
